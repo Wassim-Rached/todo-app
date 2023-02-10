@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'items',
     'authentication',
     #packages
-    # 'rest_framework',
+    'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'drf_yasg',
@@ -143,7 +143,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         #'rest_framework.authentication.BasicAuthentication',
         #'rest_framework.authentication.TokenAuthentication',
